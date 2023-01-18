@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Tip calculator</title>
+</head>
+
+<body>
+
+    <h1 class="title">Spli <br> tter</h1>
+
+    <div class="box">
+        <div class="order">
+            <form class="form">
+                <label class="title-label">Bill</label>
+                <input type="number" placeholder="0" class="bill-input" name="bill_input">
+                <i class="fa-solid fa-dollar-sign fa-sm dollar"></i>
+
+                <label class="title-label">Select Tip %</label>
+                <div class="tip-box">
+                    <input type="radio" name="tip" value="5" id="btn1">
+                    <label for="btn1" class="tip-content tip-content1">5%</label>
+
+                    <input type="radio" name="tip" value="10" id="btn2">
+                    <label for="btn2" class="tip-content tip-content2">10%</label>
+
+                    <input type="radio" name="tip" value="15" id="btn3">
+                    <label for="btn3" class="tip-content tip-content3">15%</label>
+
+                    <input type="radio" name="tip" value="25" id="btn4">
+                    <label for="btn4" class="tip-content tip-content4">25%</label>
+
+                    <input type="radio" name="tip" value="35" id="btn5">
+                    <label for="btn5" class="tip-content tip-content5">35%</label>
+
+                    <input type="radio" name="tip" value="50" id="btn6">
+                    <label for="btn6" class="tip-content tip-content6">50%</label>
+                </div>
+
+                <label class="title-label">Number of People</label>
+                <p class="message">Can't be zero</p>
+                <input type="number" placeholder="0" value="1" class="people-input" name="people_input">
+                <i class="fa-solid fa-user user"></i>
+            </form>
+        </div>
+
+        <div class="check">
+            <div class="amountBox">
+                <div class="textbox">
+                    <h3>Tip Amount</h3>
+                    <p>/person</p>
+                </div>
+
+                <span class="number" id="amount">$0.00</span>
+            </div>
+
+            <div class="totalBox">
+                <div class="textbox">
+                    <h3>Total</h3>
+                    <p>/person</p>
+                </div>
+
+                <span class="number" id="total">$0.00</span>
+            </div>
+
+            <button class="button" id="reset">reset</button>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
